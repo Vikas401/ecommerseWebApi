@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import Logo from '../../assets/images/Flipkart_logo.png'
+import { Link } from 'react-router-dom';
 
 const Header = props => {
     return(
@@ -16,7 +17,7 @@ const Header = props => {
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <Link to="/registration" class="nav-link">Register</Link>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
